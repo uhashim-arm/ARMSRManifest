@@ -1,4 +1,4 @@
-# ARMSR Manifest for Build Development
+# ARMSR Manifest for RK3399 Target Setup
 
 ## 1. Install repo
 Follow the instructions under the "Installing Repo" section
