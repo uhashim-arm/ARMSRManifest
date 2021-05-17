@@ -22,3 +22,14 @@ $ make -j2 toolchains
 ```
 $ make -j `nproc`
 ```
+
+## 5.Target Image Flashing Procedure 
+```
+Install Android Tool v2.71
+Address Name Path :
+0x0000 Miniloader   — ../miniloader.bin
+0x0000 Parameter    — ../paramter_toybrick.txt
+0x0040 loader1      — ../idbloader.img
+0x4000 loader2      — ../uboot.itb
+0x8000 SCT          — ../sct.efi
+```
