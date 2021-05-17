@@ -7,7 +7,7 @@ There are three Evaluation Platforms being used as platform for the verification
 | Target  | Manifest XML  | Device |
 | :------------: |:---------------:| :-----:|
 | Toy Brick      |   | RK3399 Pro |
-| Lenovo      | default.xml        |   Leez |
+| Lenovo Leez     | default.xml        |  Leez-p710 |
 | Pine 64 |  |    RockPro 64 |
 
 
