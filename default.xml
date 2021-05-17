@@ -6,11 +6,10 @@
    
    <default remote="github" revision="master" />
    
-   <project path="optee_os" name="OP-TEE/optee_os.git" revision="refs/tags/3.13.0" />
    <project path="atf" name="ARM-software/arm-trusted-firmware.git" revision="refs/tags/v2.3" />
    <project path="u-boot" name="u-boot.git" revision="refs/tags/v2020.04" remote="u-boot" />
-   <project path="build" name="ankuraltran/ARMSRM.git" >
-      <linkfile src="build/leez.mk" dest	="build/Makefile" />
+   <project path="build" name="ankuraltran/ARMSRBuild.git" >
+      <linkfile src="leez.mk" dest	="build/Makefile" />
    </project>
    
 </manifest>
