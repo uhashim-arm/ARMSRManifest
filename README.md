@@ -1,4 +1,6 @@
-# ARMSR Manifest for RK3399 Target Setup
+# ARMSR Manifest for RK3399 EVB Target Setup
+
+
 
 ## 1. Install repo
 Follow the instructions under the "Installing Repo" section
