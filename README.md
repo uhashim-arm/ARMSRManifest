@@ -9,7 +9,7 @@ Follow the instructions under the "Installing Repo" section
 $ mkdir <New_Dir>
 $ cd <New_Dir>
 $ repo init -u https://github.com/ankuraltran/ARMSRManifest -m ${TARGET}.xml [-b ${BRANCH}]
-$ repo sync
+$ repo sync -j4 --no-clone-bundle
 ```
 
 ## 3. Get the Toolkits
