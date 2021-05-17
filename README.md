@@ -1,5 +1,14 @@
 # ARMSR Manifest for RK3399 EVB Target Setup
 
+The information provided here provides the configuration and build setup for ARM System Ready compliance verification on Rockchip RK3399
+
+There are three Evaluation Platforms being used as platform for the verification
+
+| Target  | Manifest XML  | Device |
+| :------------: |:---------------:| :-----:|
+| Toy Brick      |   | RK3399 Pro |
+| Lenovo      | default.xml        |   Leez |
+| Pine 64 |  |    RockPro 64 |
 
 
 ## 1. Install repo
