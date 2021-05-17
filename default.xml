@@ -6,8 +6,8 @@
    
    <default remote="github" revision="master" />
    
-   <project path="atf" name="ARM-software/arm-trusted-firmware.git" revision="refs/tags/v2.3" />
-   <project path="u-boot" name="u-boot.git" revision="refs/tags/v2020.04" remote="u-boot" />
+   <project path="atf" name="ARM-software/arm-trusted-firmware.git" revision="refs/tags/v2.4" />
+   <project path="u-boot" name="u-boot.git" revision="refs/tags/v2021.07-rc1" remote="u-boot" />
    <project path="build" name="ankuraltran/ARMSRBuild.git" >
       <linkfile src="leez.mk" dest	="build/Makefile" />
    </project>
