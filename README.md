@@ -8,7 +8,7 @@ There are three Evaluation Platforms being used as platform for the verification
 | :------------: |:---------------:| :-----:|
 | Toy Brick      | Toybrick.xml | RK3399 Pro |
 | Lenovo Leez     | default.xml        |  Leez-p710 |
-| Pine 64 |  |    RockPro 64 |
+| Pine 64 | RockPro64.xml |    RockPro 64 |
 
 
 ## 1. Install repo
