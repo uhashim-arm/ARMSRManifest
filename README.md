@@ -35,6 +35,8 @@ $ make -j `nproc`
 ```
 
 ## 5.Target Image Flashing Procedure 
+
+The sequence will sync the atf(bl31), uboot(uboot.itb) to the local repo and make the images for the selected target. Currently the Image flashing is carried out manually using the rktool and is pending for automation at a later stage.
 ```
 Install Android Tool v2.71
 Address Name Path :
