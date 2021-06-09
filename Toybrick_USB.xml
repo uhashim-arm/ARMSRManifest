@@ -5,7 +5,7 @@
    
    <default remote="github" revision="master" />
    
-   <project path="kernel" name="rockchip-toybrick/kernel" />
+   <project path="kernel" name="rockchip-toybrick/kernel" revision ="master" />
    <project path="build" name="ankuraltran/ARMSRBuild.git" >
       <linkfile src="Toybrick_USB.mk" dest	="build/Makefile" />
    </project>
