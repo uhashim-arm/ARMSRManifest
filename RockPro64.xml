@@ -8,7 +8,7 @@
    
    <project path="atf" name="ARM-software/arm-trusted-firmware.git" revision="refs/tags/v2.4" />
    <project path="u-boot" name="u-boot.git" revision="refs/tags/v2021.07-rc1" remote="u-boot" />
-   <project path="build" name="ankuraltran/ARMSRBuild.git" >
+   <project path="build" name="ankuraltran/ARMSRBuild.git" revision="CapsuleUpdate">
       <linkfile src="RockPro64.mk" dest	="build/Makefile" />
    </project>
    
