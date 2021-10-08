@@ -25,7 +25,7 @@ $ repo sync -j4 --no-clone-bundle
 
 ## 3. Get the Toolkits
 ```
-$ cd <New_Dir>/build/
+$ cd build/
 $ make -j2 toolchains
 ```
 
