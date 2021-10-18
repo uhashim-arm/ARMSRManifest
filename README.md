@@ -33,16 +33,3 @@ $ make -j2 toolchains
 ```
 $ make -j `nproc`
 ```
-
-## 5.Target Image Flashing Procedure 
-
-The sequence will sync the atf(bl31), uboot(uboot.itb) to the local repo and make the images for the selected target. Currently the Image flashing is carried out manually using the rktool and is pending for automation at a later stage.
-```
-Install Android Tool v2.71
-Address Name Path :
-0x0000 Miniloader   — ../miniloader.bin
-0x0000 Parameter    — ../paramter_toybrick.txt
-0x0040 loader1      — ../idbloader.img
-0x4000 loader2      — ../uboot.itb
-0x8000 SCT          — ../sct.efi
-```
