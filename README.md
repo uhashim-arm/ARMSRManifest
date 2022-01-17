@@ -19,7 +19,7 @@ Follow the instructions under the "Installing Repo" section
 ```
 mkdir <New_Dir>
 cd <New_Dir>
-repo init -u https://github.com/ankuraltran/ARMSRManifest -m ${TARGET}.xml [-b ${BRANCH}]
+repo init -u https://github.com/uhashim-arm/ARMSRManifest.git -m TB-RK3399proD.xml 
 repo sync -j4 --no-clone-bundle
 ```
 
