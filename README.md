@@ -59,6 +59,7 @@ make -j2 toolchains
 
 ## 4. Build the target
 ```
+cd build/
 make -j `nproc`
 ```
 Amongst other things the above command will generate the following files of interest in the `../out/bin/u-boot/` directory:
@@ -67,11 +68,17 @@ Amongst other things the above command will generate the following files of inte
 u-boot.itb
 idbloader.img
 ```
+Check the above by running: 
+```
+ls -ltr ../out/bin/u-boot/
+```
+
+
 
 ## 5. Building the FW binaries
 ```
 cd ../rkbin
-/tools/boot_merger  ./RKBOOT/RK3399PROMINIALL.ini
+./tools/boot_merger  ./RKBOOT/RK3399PROMINIALL.ini
 ```
 The above command will generate the miniloader file: eg. `rk3399pro_loader_v1.25.126.bin`
 
@@ -87,9 +94,9 @@ sudo apt-get install pkg-config libudev-dev libusb-1.0-0-dev libusb-1.0
 
 ### 6.b Put the board in MaskROM mode 
 1. Power-off the board
-2. Keep the Maskrom button pressed
-3. Power on the board (either by long-pressing the power button on plugging in the Power connector)
-4. Release power-button and maskrom button after about 3 seconds
+2. Keep the Maskrom button pressed for 10 seconds
+3. Power on the board (either by long-pressing the power button OR plugging in the Power connector)
+4. Release maskrom button after 5 seconds
 5. The device should now be in Maskrom mode ready for flashing
 
 
@@ -99,14 +106,15 @@ sudo apt-get install pkg-config libudev-dev libusb-1.0-0-dev libusb-1.0
 #    Fuzhou Rockchip Electronics Company RK3399 in Mask ROM mode
 lsusb 
 
-sudo ./tools/rkdeveloptool db rk3399pro_loader_v1.25.126.bin
-sudo ./tools/rkdeveloptool wl 0x40 ../out/bin/u-boot/idbloader.img
-sudo ./tools/rkdeveloptool wl 0x4000 ../out/bin/u-boot/u-boot.itb
+sudo ./tools/rkdeveloptool db rk3399pro_loader_v1.25.126.bin && sleep 2
+sudo ./tools/rkdeveloptool wl 0x40 ../out/bin/u-boot/idbloader.img && sleep 2
+sudo ./tools/rkdeveloptool wl 0x4000 ../out/bin/u-boot/u-boot.itb && sleep 2
 sudo ./tools/rkdeveloptool rd
 ```
 
 The TB_RK3399ProD board should restart and boot into u-boot
-If you have a bootable device with LINUX installed connected to USB or installed in MMCslot the board should start booting the linux kernel.
+
+If you have a bootable storage device with a Linux distro installed, connected to USB or installed in MMCslot the board should start booting the linux kernel.
  
 
 
