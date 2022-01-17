@@ -99,10 +99,10 @@ sudo apt-get install pkg-config libudev-dev libusb-1.0-0-dev libusb-1.0
 #    Fuzhou Rockchip Electronics Company RK3399 in Mask ROM mode
 lsusb 
 
-rkdeveloptool db rk3399pro_loader_v1.25.126.bin
-rkdeveloptool wl 0x40 ../out/bin/u-boot/idbloader.img
-rkdeveloptool wl 0x4000 ../out/bin/u-boot/u-boot.itb
-rkdeveloptool rd
+sudo ./tools/rkdeveloptool db rk3399pro_loader_v1.25.126.bin
+sudo ./tools/rkdeveloptool wl 0x40 ../out/bin/u-boot/idbloader.img
+sudo ./tools/rkdeveloptool wl 0x4000 ../out/bin/u-boot/u-boot.itb
+sudo ./tools/rkdeveloptool rd
 ```
 
 The TB_RK3399ProD board should restart and boot into u-boot
