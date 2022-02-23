@@ -120,14 +120,14 @@ If you have a bootable storage device with a Linux distro installed, connected t
 
 You have 2 options to boot into is: 
 
-## Manual boot device selection: 
-1. Interrupt u-boot by hitting any key
-2. Run the command: 
+* Option1: Manual boot device selection: 
+   1. Interrupt u-boot by hitting any key
+   2. Run the command: 
    `run usb_boot`
 
-## Update U-boot env variables 
-1. Interrupt u-boot by hitting any key
-2. Update the *boot* environment variables to either change the boot order or override the "boot" variable to "usb_boot"
+* Option2: Update U-boot env variables 
+   1. Interrupt u-boot by hitting any key
+   2. Update the *boot* environment variables to either change the boot order or override the "boot" variable to "usb_boot"
 
 This should start booting the linux kernel on the external uSDCard/USB drive. 
 
